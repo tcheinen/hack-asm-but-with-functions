@@ -7,8 +7,8 @@ fun main(args: Array<String>) {
 
     var stack: Int = 0
 
-    val f: File = File("div.asm")
-    val outfile: PrintWriter = File("div-out.asm").printWriter()
+    val f: File = File("function_test.asm")
+    val outfile: PrintWriter = File("function_test-out.asm").printWriter()
     for(line in f.readLines()) {
         var out: String = line
         if(line.startsWith("#call",ignoreCase = true)) {
